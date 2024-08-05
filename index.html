@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Righteous&family=Signika:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Righteous&family=Russo+One&family=Signika:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+
+    <!-- modal form-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" id="ModalTop" style="border:none">
+                    <h5 class="modal-title" id="ModalTitle" id="exampleModalLabel"
+                        style="font-family: 'Russo One', sans-serif;">Hire Me...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="ModalMainBody">
+                    <h6 id="FieldName1">Company Name</h6>
+                    <input type="text" name="Cname" class="inputbox" id="inputboxform1" required>
+                    <br><br>
+                    <h6 id="FieldName2">Email Address</h6>
+                    <input type="email" name="Cmail" class="inputbox" id="inputboxform2" required>
+                    <br><br>
+                    <h6 id="FieldName3">Job Description</h6>
+                    <textarea class="inputbox textareainput" id="inputboxform3" required></textarea>
+                    <br>
+                </div>
+                <div class="modal-footer" id="footdown" style="border:none">
+                    <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary sendmail" id="SubmitBtnWin1">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- what i offer Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body" id="mainbody1">
+                    <h2 style="text-align: center;color: blueviolet;font-family:'Russo One', sans-serif;">Product
+                        Designer</h2>
+                    <br>
+                    <ul class="Modal1List" id="Modal1List">
+                        <li>User-Centered Design</li>
+                        <li>Ideation and Prototyping</li>
+                        <li>Collaboration and Communication</li>
+                        <li>Ethical and Sustainable Design</li>
+                        <li>Project Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body" id="mainbody2">
+                    <h2 style="text-align: center;color: blueviolet;font-family:'Russo One', sans-serif;">UI/UX Designer
+                    </h2>
+                    <br>
+                    <ul class="Modal1List" id="Modal2List">
+                        <li>User-Centered Design</li>
+                        <li>Ideation and Prototyping</li>
+                        <li>Collaboration and Communication</li>
+                        <li>Ethical and Sustainable Design</li>
+                        <li>Project Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body" id="mainbody3">
+                    <h2 style="text-align: center;color: blueviolet;font-family:'Russo One', sans-serif;">Web Designer
+                    </h2>
+                    <br>
+                    <ul class="Modal1List" id="Modal3List">
+                        <li>Interactive Design</li>
+                        <li>Develop website using latest technology</li>
+                        <li>Hosting</li>
+                        <li>Security</li>
+                        <li>Thems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- resent project -->
+    <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body" id="mainbody3">
+                    <video style="height: 100%;width: 100%;" controls>
+                        <source src="watch.mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body" id="mainbody3">
+                    <video style="height: 100%;width: 100%;" controls>
+                        <source src="hotstar.mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body" id="mainbody3">
+                    <video style="height: 100%;width: 100%;" controls>
+                        <source src="shopping.mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="first" id="first">
+
+        <!-- navigation bar -->
+        <nav class="nav">
+            <ul class="navigation">
+                <li class="logo">Vaibhav</li>
+                <a href="#profile" style="color:black;text-decoration: none;">
+                    <li class="Item1" id="item1">Profile</li>
+                </a>
+                <a href="#checkMyResentProject" style="color:black;text-decoration: none;">
+                    <li class="Item2" id="item2">Project</li>
+                </a>
+                <a href="#letstalk" style="color:black;text-decoration: none;">
+                    <li class="Item3" id="item3">Contect</li>
+                </a>
+                <li class="Item4"><img src="moon.png" height="25px" id="ChangeColor"></li>
+                <li class="Item5"><img src="whiteMenu.png" height="25px" id="MenuBar"></li>
+            </ul>
+        </nav>
+
+        <!-- responsive css navigation bar -->
+        <div class="ResponsiveHideBox" id="ResponsiveHideBox">
+            <ul class="MenuItem">
+                <a href="#first" style="color:black;text-decoration: none;">
+                    <li id="it1">Home</li>
+                </a>
+                <a href="#profile" style="color:black;text-decoration: none;">
+                    <li id="it2">Profile</li>
+                </a>
+                <a href="#checkMyResentProject" style="color:black;text-decoration: none;">
+                    <li id="it3">Project</li>
+                </a>
+                <a href="#letstalk" style="color:black;text-decoration: none;">
+                    <li id="it4">Contect</li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- main Page circle -->
+        <div class="box1" id="box1">
+            <div class="box2">
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="content">
+            <h1 class="name" id="name">Vaibhav Joyashi</h1>
+            <p class="para" id="para">I Am Web Developer And Application Developer</p>
+            <a href="./Resume.docx" download><button class="btn1">Download CV</button></a><button class="btn2"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">Hire Me</button>
+        </div>
+
+        <!-- social media -->
+        <ul class="social">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github"
+                    id="social1" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg></li>
+            <br>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" id="social2"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                </svg></li>
+            <br>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" id="social3"
+                    class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg></li>
+        </ul>
+    </section>
+
+    <!-- profile section -->
+    <section class="profile" id="profile">
+        <h1 class="AboutMe">About Me</h1>
+
+        <div class="MainProfileBox">
+            <div class="img" data-aos="flip-left"></div>
+            <div class="ProfileContent" data-aos="zoom-in">
+                <h1 class="hello" id="hello">Hello,</h1>
+                <p class="ProfilePara" id="ProfilePara">I am Vaibhav Joyashi, a full-stack web and application developer
+                    with a keen
+                    interest in UI/UX design and graphic design.</p>
+                <ul class="CBox">
+                    <li>
+                        <div class="ProfileContentBox" id="ProfileContentBox1">
+                            <h3 class="MainCount" id="MainCount1">+<span class="count">30</span></h3>
+                            <h6 class="ProfileContentCount">Project</h6>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ProfileContentBox" id="ProfileContentBox2">
+                            <h3 class="MainCount" id="MainCount2">+<span class="count">40</span></h3>
+                            <h6 class="ProfileContentCount">UI/UX</h6>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ProfileContentBox" id="ProfileContentBox3">
+                            <h3 class="MainCount" id="MainCount3">+<span class="count">20</span></h3>
+                            <h6 class="ProfileContentCount">Graphics</h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="whatioffer" id="whatioffer">
+        <h1 class="offer">What I Offer...?</h1>
+        <ul class="offerbox">
+            <li>
+                <div class="WhatIOffrerBox" id="WhatIOffrerBox1" data-aos="zoom-in-up">
+                    <h4 class="Head" id="head1">Product <br>Designer</h4>
+                    <button class="ExploreBtn" id="ExploreBtn1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal1">Explore More <img src="next.png" height="25px"></button>
+                </div>
+            </li>
+            <li>
+                <div class="WhatIOffrerBox" id="WhatIOffrerBox2" data-aos="zoom-in-up">
+                    <h4 class="Head" id="head2">UI/UX <br>Designer</h4>
+                    <button class="ExploreBtn" id="ExploreBtn2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">Explore More <img src="next.png" height="25px"></button>
+                </div>
+            </li>
+            <li>
+                <div class="WhatIOffrerBox" id="WhatIOffrerBox3" data-aos="zoom-in-up">
+                    <h4 class="Head" id="head3">Web <br>Designer</h4>
+                    <button class="ExploreBtn" id="ExploreBtn3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal3">Explore More <img src="next.png" height="25px"></button>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="checkMyResentProject" id="checkMyResentProject">
+        <h1 class="ResentProject">Resent Project</h1>
+        <ul class="ResentProjectList">
+            <li>
+                <div class="RecentProjectBox1" data-aos="zoom-in" id="RecentProjectBox1">
+                    <h3 class="projectname1">Rolex Watch Web Site</h3>
+                    <p class="project1desc" id="project1desc">This site i can develop with the help of HTML,CSS and
+                        Bootstrap this is my first<br> web project.</p>
+                    <button class="VideoButton" data-bs-toggle="modal" data-bs-target="#exampleModal11">Video
+                        Preview</button>
+                </div>
+
+            </li>
+            <li>
+                <div class="RecentProjectBox2" data-aos="zoom-in" id="RecentProjectBox2">
+                    <h3 class="projectname1">Hotstar Clone</h3>
+                    <p class="project1desc" id="project2desc">This site i can develop with the help of
+                        HTML,CSS,Bootstrap,Js this is my first web project with javascript.</p>
+                    <button class="VideoButton" data-bs-toggle="modal" data-bs-target="#exampleModal12">Video
+                        Preview</button>
+                </div>
+
+            </li>
+            <li>
+                <div class="RecentProjectBox3" data-aos="zoom-in" id="RecentProjectBox3">
+                    <h3 class="projectname1">Shopping Web Site</h3>
+                    <p class="project1desc" id="project3desc">This site i can develop with the help of
+                        HTML,CSS,JS,Bootstrap,PHP this is my first web project with backend.</p>
+                    <button class="VideoButton" data-bs-toggle="modal" data-bs-target="#exampleModal13">Video
+                        Preview</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="language" id="language">
+        <h1 class="Talk">Expertise In</h1>
+        <ul class="languagelogo">
+            <li><img src="html-5.png" height="50px" data-aos="zoom-in"></li>
+            <li><img src="css.png" height="50px" data-aos="zoom-in"></li>
+            <li><img src="js.png" height="50px" data-aos="zoom-in"></li>
+            <li><img src="web.png" height="50px" data-aos="zoom-in"></li>
+            <li><img src="bootstrap.png" height="50px" data-aos="zoom-in"></li>
+            <li><img src="programing.png" height="50px" data-aos="zoom-in"></li>
+            <li><img src="pngwing.com (1).png" height="50px" data-aos="zoom-in"></li>
+            <li><img src="c-.png" height="50px" data-aos="zoom-in"></li>
+            <li><img src="java.png" height="50px" data-aos="zoom-in"></li>
+        </ul>
+    </section>
+
+
+    <section class="letstalk" id="letstalk">
+        <h1 class="Talk">Let's Talk</h1>
+        <br>
+        <form>
+            <h5 class="FormLabel" id="FormLabel">User Email</h5>
+            <input type="email" name="Useremail" class="field1" id="field1" required>
+            <br>
+            <h5 class="FormLabel2" id="FormLabel2">Message</h5>
+            <textarea rows="10" cols="100" class="field2" id="field2" required></textarea>
+            <br>
+            <button class="btnsendmail" id="sendMail">Send Email</button>
+        </form>
+    </section>
+
+    <section class="footer" id="footer">
+        <ul class="MainControl">
+            <ul class="FootLogo">
+                <li>Vaibhav</li>
+            </ul>
+            <ul class="FootNav">
+                <a href="#first" style="color: #fff;text-decoration: none;">
+                    <li>Home</li>
+                </a>
+                <a href="#profile" style="color: #fff;text-decoration: none;">
+                    <li>About</li>
+                </a>
+                <a href="#checkMyResentProject" style="color: #fff;text-decoration: none;">
+                    <li>Project</li>
+                </a>
+                <a href="#language" style="color: #fff;text-decoration: none;">
+                    <li>Experties</li>
+                </a>
+            </ul>
+            <ul class="FootSocial">
+                <li><a href="https://github.com/VaibhavJoyashi9" style="color:#fff"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-github" id="social1" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg></a></li>
+                <br>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" id="social2"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg></li>
+                <br>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" id="social3"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg></li>
+            </ul>
+        </ul>
+        <p class="FootPara">All copyright Are Reserved ©</p>
+    </section>
+
+    <!-- script -->
+    <script>
+        let a = 1;
+        let btn = document.getElementById("ChangeColor");
+        btn.addEventListener("click", () => {
+            if (a == 1) {
+
+                // dark Mode
+
+                // background img
+                document.getElementById("first").style.background = "url('backdark.png')";
+                document.getElementById("first").style.backgroundPosition = "center";
+                document.getElementById("first").style.backgroundSize = "cover";
+                document.getElementById("first").style.backgroundRepeat = "no-repeat";
+
+                // Text
+                document.getElementById("item1").style.color = "#fff";
+                document.getElementById("item2").style.color = "#fff";
+                document.getElementById("item3").style.color = "#fff";
+
+                // background
+                document.getElementById("box1").style.backgroundColor = "#000";
+
+                // MainText
+                document.getElementById("name").style.color = "#fff";
+                document.getElementById("para").style.color = "#fff";
+
+                // social madia
+                document.getElementById("social1").style.color = "#fff";
+                document.getElementById("social2").style.color = "#fff";
+                document.getElementById("social3").style.color = "#fff";
+
+                // Changer Icon
+                document.getElementById("ChangeColor").src = "sun.png";
+                document.getElementById("ChangeColor").style.height = "30px";
+
+                // Modal Custom  
+                document.getElementById("ModalTop").style.backgroundColor = "rgb(44, 44, 44)";
+                document.getElementById("ModalTitle").style.color = "#fff";
+                document.getElementById("ModalMainBody").style.backgroundColor = "rgb(44, 44, 44)";
+                document.getElementById("FieldName1").style.color = "#fff";
+                document.getElementById("FieldName2").style.color = "#fff";
+                document.getElementById("FieldName3").style.color = "#fff";
+                document.getElementById("footdown").style.backgroundColor = "rgb(44,44,44)";
+
+                document.getElementById("inputboxform1").style.backgroundColor = "rgb(44,44,44)";
+                document.getElementById("inputboxform1").style.border = "1px solid white";
+                document.getElementById("inputboxform1").style.color = "white";
+                document.getElementById("inputboxform2").style.backgroundColor = "rgb(44,44,44)";
+                document.getElementById("inputboxform2").style.border = "1px solid white";
+                document.getElementById("inputboxform2").style.color = "white";
+                document.getElementById("inputboxform3").style.backgroundColor = "rgb(44,44,44)";
+                document.getElementById("inputboxform3").style.border = "1px solid white";
+                document.getElementById("inputboxform3").style.color = "white";
+
+                // section 2
+                document.getElementById("profile").style.backgroundColor = "black";
+                document.getElementById("ProfilePara").style.color = "white";
+                document.getElementById("hello").style.color = "white";
+                document.getElementById("ProfileContentBox1").style.border = "3px solid white";
+                document.getElementById("ProfileContentBox2").style.border = "3px solid white";
+                document.getElementById("ProfileContentBox3").style.border = "3px solid white";
+
+                document.getElementById("MainCount1").style.color = "white";
+                document.getElementById("MainCount2").style.color = "white";
+                document.getElementById("MainCount3").style.color = "white";
+
+                // what is offer section
+                document.getElementById("whatioffer").style.backgroundColor = "#000";
+                document.getElementById("head1").style.color = "#fff";
+                document.getElementById("head2").style.color = "#fff";
+                document.getElementById("head3").style.color = "#fff";
+                document.getElementById("ExploreBtn1").style.backgroundColor = "#000";
+                document.getElementById("ExploreBtn2").style.backgroundColor = "#000";
+                document.getElementById("ExploreBtn3").style.backgroundColor = "#000";
+                document.getElementById("WhatIOffrerBox1").style.border = "3px solid white";
+                document.getElementById("WhatIOffrerBox2").style.border = "3px solid white";
+                document.getElementById("WhatIOffrerBox3").style.border = "3px solid white";
+                document.getElementById("mainbody1").style.backgroundColor = "rgb(44, 44, 44)";
+                document.getElementById("Modal1List").style.color = "#fff";
+
+                document.getElementById("mainbody2").style.backgroundColor = "rgb(44, 44, 44)";
+                document.getElementById("Modal2List").style.color = "#fff";
+
+                document.getElementById("mainbody3").style.backgroundColor = "rgb(44, 44, 44)";
+                document.getElementById("Modal3List").style.color = "#fff";
+
+                // checkMyResentProject
+                document.getElementById("checkMyResentProject").style.backgroundColor = "black";
+                document.getElementById("RecentProjectBox1").style.border = "3px solid white";
+                document.getElementById("RecentProjectBox2").style.border = "3px solid white";
+                document.getElementById("RecentProjectBox3").style.border = "3px solid white";
+                document.getElementById("project1desc").style.color = "#fff";
+                document.getElementById("project2desc").style.color = "#fff";
+                document.getElementById("project3desc").style.color = "#fff";
+
+                // language
+                document.getElementById("language").style.backgroundColor = "black";
+
+                // form
+                document.getElementById("letstalk").style.backgroundColor = "black";
+                document.getElementById("FormLabel").style.color = "white";
+                document.getElementById("FormLabel2").style.color = "white";
+                document.getElementById("field1").style.backgroundColor = "rgb(44,44,44)";
+                document.getElementById("field2").style.backgroundColor = "rgb(44,44,44)";
+                document.getElementById("field1").style.border = "1px solid white";
+                document.getElementById("field2").style.border = "1px solid white";
+                document.getElementById("field1").style.color = "white";
+                document.getElementById("field2").style.color = "white";
+                a = 0;
+            }
+            else {
+
+                // Light Mode
+
+                // background img
+                document.getElementById("first").style.background = "url('backlight.png')";
+                document.getElementById("first").style.backgroundPosition = "center";
+                document.getElementById("first").style.backgroundSize = "cover";
+                document.getElementById("first").style.backgroundRepeat = "no-repeat";
+
+                // Text
+                document.getElementById("item1").style.color = "#000";
+                document.getElementById("item2").style.color = "#000";
+                document.getElementById("item3").style.color = "#000";
+
+                // background
+                document.getElementById("box1").style.backgroundColor = "#fff";
+
+
+                // MainText
+                document.getElementById("name").style.color = "#000";
+                document.getElementById("para").style.color = "#000";
+
+                // social madia
+                document.getElementById("social1").style.color = "#000";
+                document.getElementById("social2").style.color = "#000";
+                document.getElementById("social3").style.color = "#000";
+
+                // changer Icon
+                document.getElementById("ChangeColor").src = "moon.png";
+
+                // Modal Custom
+                document.getElementById("ModalTop").style.backgroundColor = "white";
+                document.getElementById("ModalTitle").style.color = "#000";
+                document.getElementById("ModalMainBody").style.backgroundColor = "#fff";
+                document.getElementById("FieldName1").style.color = "#000";
+                document.getElementById("FieldName2").style.color = "#000";
+                document.getElementById("FieldName3").style.color = "#000";
+                document.getElementById("footdown").style.backgroundColor = "#fff";
+
+
+                document.getElementById("inputboxform1").style.backgroundColor = "#fff";
+                document.getElementById("inputboxform1").style.border = "1px solid black";
+                document.getElementById("inputboxform1").style.color = "black";
+
+                document.getElementById("inputboxform2").style.backgroundColor = "#fff";
+                document.getElementById("inputboxform2").style.border = "1px solid black";
+                document.getElementById("inputboxform2").style.color = "black";
+
+                document.getElementById("inputboxform3").style.backgroundColor = "#fff";
+                document.getElementById("inputboxform3").style.border = "1px solid black";
+                document.getElementById("inputboxform3").style.color = "black";
+
+                // section 2
+                document.getElementById("profile").style.backgroundColor = "white";
+                document.getElementById("ProfilePara").style.color = "black";
+                document.getElementById("hello").style.color = "black";
+                document.getElementById("ProfileContentBox1").style.border = "3px solid black";
+                document.getElementById("ProfileContentBox2").style.border = "3px solid black";
+                document.getElementById("ProfileContentBox3").style.border = "3px solid black";
+
+                document.getElementById("MainCount1").style.color = "black";
+                document.getElementById("MainCount2").style.color = "black";
+                document.getElementById("MainCount3").style.color = "black";
+
+                // what is offer section
+                document.getElementById("whatioffer").style.backgroundColor = "#fff";
+                document.getElementById("head1").style.color = "#000";
+                document.getElementById("head2").style.color = "#000";
+                document.getElementById("head3").style.color = "#000";
+                document.getElementById("ExploreBtn1").style.backgroundColor = "#fff";
+                document.getElementById("ExploreBtn2").style.backgroundColor = "#fff";
+                document.getElementById("ExploreBtn3").style.backgroundColor = "#fff";
+                document.getElementById("WhatIOffrerBox1").style.border = "none"
+                document.getElementById("WhatIOffrerBox2").style.border = "none";
+                document.getElementById("WhatIOffrerBox3").style.border = "none";
+                document.getElementById("mainbody1").style.backgroundColor = "white";
+                document.getElementById("Modal1List").style.color = "#000";
+
+                document.getElementById("mainbody2").style.backgroundColor = "white";
+                document.getElementById("Modal2List").style.color = "#000";
+
+                document.getElementById("mainbody3").style.backgroundColor = "white";
+                document.getElementById("Modal3List").style.color = "#000";
+
+                // language
+                document.getElementById("language").style.backgroundColor = "black";
+
+                // form
+                document.getElementById("letstalk").style.backgroundColor = "white";
+                document.getElementById("FormLabel").style.color = "black";
+                document.getElementById("FormLabel2").style.color = "black";
+                document.getElementById("field1").style.backgroundColor = "white";
+                document.getElementById("field2").style.backgroundColor = "white";
+                document.getElementById("field1").style.border = "1px solid black";
+                document.getElementById("field2").style.border = "1px solid black";
+                document.getElementById("field1").style.color = "black";
+                document.getElementById("field2").style.color = "black";
+
+
+                document.getElementById("checkMyResentProject").style.backgroundColor = "white";
+                document.getElementById("RecentProjectBox1").style.border = "none";
+                document.getElementById("RecentProjectBox2").style.border = "none";
+                document.getElementById("RecentProjectBox3").style.border = "none";
+                document.getElementById("project1desc").style.color = "#000";
+                document.getElementById("project2desc").style.color = "#000";
+                document.getElementById("project3desc").style.color = "#000";
+
+
+                document.getElementById("language").style.backgroundColor = "white";
+
+                a = 1;
+            }
+        })
+    </script>
+
+
+    <!-- Responsive Code -->
+    <script>
+        document.getElementById("it1").addEventListener("click", () => {
+            document.getElementById("ResponsiveHideBox").style.left = "-100%";
+        })
+        document.getElementById("it2").addEventListener("click", () => {
+            document.getElementById("ResponsiveHideBox").style.left = "-100%";
+        })
+        document.getElementById("it3").addEventListener("click", () => {
+            document.getElementById("ResponsiveHideBox").style.left = "-100%";
+        })
+        document.getElementById("it4").addEventListener("click", () => {
+            document.getElementById("ResponsiveHideBox").style.left = "-100%";
+        })
+
+        var mediaQuery = window.matchMedia("(max-width: 800px)");
+        function handleMediaQueryChange(e) {
+            if (e.matches) {
+                document.getElementById("ResponsiveHideBox").style.backgroundColor = "#fff";
+                document.getElementById("it1").style.color = "#000";
+                document.getElementById("it2").style.color = "#000";
+                document.getElementById("it3").style.color = "#000";
+                document.getElementById("it4").style.color = "#000";
+
+                document.getElementById("ChangeColor").src = "WhiteMoon.png";
+                document.getElementById("ChangeColor").style.height = "35px";
+                document.getElementById("ChangeColor").style.marginTop = "-4px"
+                let b = 1;
+                let btn = document.getElementById("ChangeColor");
+                btn.addEventListener("click", () => {
+                    if (b == 1) {
+
+                        // dark Mode
+
+                        // background img
+                        document.getElementById("first").style.background = "url('HorizontalDark.png')";
+                        document.getElementById("first").style.backgroundPosition = "center";
+                        document.getElementById("first").style.backgroundSize = "cover";
+                        document.getElementById("first").style.backgroundRepeat = "no-repeat";
+
+                        // Text
+                        document.getElementById("item1").style.color = "#fff";
+                        document.getElementById("item2").style.color = "#fff";
+                        document.getElementById("item3").style.color = "#fff";
+
+                        // background
+                        document.getElementById("box1").style.backgroundColor = "#000";
+
+                        // MainText
+                        document.getElementById("name").style.color = "#fff";
+                        document.getElementById("para").style.color = "#fff";
+
+                        // social madia
+                        document.getElementById("social1").style.color = "#fff";
+                        document.getElementById("social2").style.color = "#fff";
+                        document.getElementById("social3").style.color = "#fff";
+
+                        // Changer Icon
+                        document.getElementById("ChangeColor").src = "sun.png";
+                        document.getElementById("ChangeColor").style.height = "27px";
+                        document.getElementById("ChangeColor").style.marginTop = "-1px";
+
+                        // Modal Custom  
+                        document.getElementById("ModalTop").style.backgroundColor = "rgb(44, 44, 44)";
+                        document.getElementById("ModalTitle").style.color = "#fff";
+                        document.getElementById("ModalMainBody").style.backgroundColor = "rgb(44, 44, 44)";
+                        document.getElementById("FieldName1").style.color = "#fff";
+                        document.getElementById("FieldName2").style.color = "#fff";
+                        document.getElementById("FieldName3").style.color = "#fff";
+                        document.getElementById("footdown").style.backgroundColor = "rgb(44,44,44)";
+
+                        document.getElementById("inputboxform1").style.backgroundColor = "rgb(44,44,44)";
+                        document.getElementById("inputboxform1").style.border = "1px solid white";
+                        document.getElementById("inputboxform1").style.color = "white";
+                        document.getElementById("inputboxform2").style.backgroundColor = "rgb(44,44,44)";
+                        document.getElementById("inputboxform2").style.border = "1px solid white";
+                        document.getElementById("inputboxform2").style.color = "white";
+                        document.getElementById("inputboxform3").style.backgroundColor = "rgb(44,44,44)";
+                        document.getElementById("inputboxform3").style.border = "1px solid white";
+                        document.getElementById("inputboxform3").style.color = "white";
+
+                        document.getElementById("ResponsiveHideBox").style.backgroundColor = "#000";
+                        document.getElementById("it1").style.color = "#fff";
+                        document.getElementById("it2").style.color = "#fff";
+                        document.getElementById("it3").style.color = "#fff";
+                        document.getElementById("it4").style.color = "#fff";
+
+                        b = 0;
+                    }
+                    else {
+
+                        // Light Mode
+
+                        // background img
+                        document.getElementById("first").style.background = "url('Horizontal.png')";
+                        document.getElementById("first").style.backgroundPosition = "center";
+                        document.getElementById("first").style.backgroundSize = "cover";
+                        document.getElementById("first").style.backgroundRepeat = "no-repeat";
+
+                        // Text
+                        document.getElementById("item1").style.color = "#000";
+                        document.getElementById("item2").style.color = "#000";
+                        document.getElementById("item3").style.color = "#000";
+
+                        // background
+                        document.getElementById("box1").style.backgroundColor = "#fff";
+
+
+                        // MainText
+                        document.getElementById("name").style.color = "#000";
+                        document.getElementById("para").style.color = "#000";
+
+                        // social madia
+                        document.getElementById("social1").style.color = "#000";
+                        document.getElementById("social2").style.color = "#000";
+                        document.getElementById("social3").style.color = "#000";
+
+                        // changer Icon
+                        document.getElementById("ChangeColor").src = "WhiteMoon.png";
+                        document.getElementById("ChangeColor").style.height = "35px";
+                        document.getElementById("ChangeColor").style.marginTop = "-3px"
+
+                        // Modal Custom
+                        document.getElementById("ModalTop").style.backgroundColor = "white";
+                        document.getElementById("ModalTitle").style.color = "#000";
+                        document.getElementById("ModalMainBody").style.backgroundColor = "#fff";
+                        document.getElementById("FieldName1").style.color = "#000";
+                        document.getElementById("FieldName2").style.color = "#000";
+                        document.getElementById("FieldName3").style.color = "#000";
+                        document.getElementById("footdown").style.backgroundColor = "#fff";
+
+
+                        document.getElementById("inputboxform1").style.backgroundColor = "#fff";
+                        document.getElementById("inputboxform1").style.border = "1px solid black";
+                        document.getElementById("inputboxform1").style.color = "black";
+
+                        document.getElementById("inputboxform2").style.backgroundColor = "#fff";
+                        document.getElementById("inputboxform2").style.border = "1px solid black";
+                        document.getElementById("inputboxform2").style.color = "black";
+
+                        document.getElementById("inputboxform3").style.backgroundColor = "#fff";
+                        document.getElementById("inputboxform3").style.border = "1px solid black";
+                        document.getElementById("inputboxform3").style.color = "black";
+
+
+                        document.getElementById("ResponsiveHideBox").style.backgroundColor = "#fff";
+                        document.getElementById("it1").style.color = "#000";
+                        document.getElementById("it2").style.color = "#000";
+                        document.getElementById("it3").style.color = "#000";
+                        document.getElementById("it4").style.color = "#000";
+
+                        b = 1;
+                    }
+                })
+            }
+        }
+        mediaQuery.addListener(handleMediaQueryChange);
+        handleMediaQueryChange(mediaQuery);
+
+
+        // hamburger menubar
+        let menuinout = 1;
+        let menu = document.getElementById("MenuBar");
+        menu.addEventListener("click", () => {
+            if (menuinout == 1) {
+                document.getElementById("ResponsiveHideBox").style.left = "0%";
+                menuinout = 0;
+            }
+            else {
+                document.getElementById("ResponsiveHideBox").style.left = "-100%";
+                menuinout = 1;
+            }
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- counter up -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.count').counterUp({
+            delay: 10,
+            time: 2000
+        });
+    </script>
+
+    <!-- scroll animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- work in progress -->
+    <script>
+        document.getElementById("SubmitBtnWin1").addEventListener("click", () => {
+            alert("Sorry,Work In Progress...")
+        })
+        document.getElementById("sendMail").addEventListener("click", () => {
+            alert("Sorry,Work In Progress...")
+        })
+
+    </script>
+
+
+</body>
+
+</html>

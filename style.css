@@ -1,0 +1,844 @@
+* {
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.first {
+    height: 772px;
+    width: 100%;
+    background: url("backlight.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    margin-left: 70px;
+    transform: translateY(15px);
+
+}
+
+.logo {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #fff;
+}
+
+.Item1 {
+    margin-left: 1060px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    transform: translateY(2px);
+}
+
+.Item2 {
+    margin-left: 30px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    transform: translateY(2px);
+}
+
+.Item3 {
+    margin-left: 30px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    transform: translateY(2px);
+}
+
+.Item4 {
+    margin-left: 35px;
+    transform: translateY(2px);
+}
+
+.Item5 {
+    margin-left: 35px;
+    transform: translateY(2px);
+    display: none;
+}
+
+/* responsive css hide box */
+.ResponsiveHideBox {
+    height: 720px;
+    width: 20%;
+    position: fixed;
+    transform: translateY(50px);
+    left: -100%;
+}
+
+
+/* main circle */
+.box1 {
+    height: 550px;
+    width: 550px;
+    border: 30px solid blueviolet;
+    border-radius: 50%;
+    margin-left: 220px;
+    transform: translateY(70px);
+    background-color: #fff;
+    position: relative;
+}
+
+.box2 {
+    height: 390px;
+    width: 390px;
+    border: 20px solid blueviolet;
+    border-radius: 50%;
+    margin-left: 55px;
+    transform: translateY(50px);
+    background-color: #fff;
+    background: url("choise4.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+/* content */
+.content {
+    height: 200px;
+    width: 700px;
+    margin-left: 830px;
+    transform: translateY(-300px);
+}
+
+.name {
+    font-family: "Russo One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.para {
+    font-family: "Russo One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin-left: 10px;
+    font-size: 20px;
+    transform: translateY(10px);
+}
+
+.btn1 {
+    font-family: "Russo One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+    height: 50px;
+    width: 25%;
+    transform: translateY(40px);
+    border: none;
+    background-color: blueviolet;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.btn2 {
+    font-family: "Russo One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+    height: 50px;
+    width: 25%;
+    margin-left: 20px;
+    transform: translateY(40px);
+    border: none;
+    background-color: blueviolet;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.social {
+    margin-left: 1600px;
+    transform: translateY(-470px);
+    list-style: none;
+}
+
+/* modal */
+.sendmail {
+    font-family: "Russo One", sans-serif;
+    background-color: blueviolet;
+}
+
+.close {
+    font-family: "Russo One", sans-serif;
+}
+
+.inputbox {
+    width: 100%;
+    height: 40px;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid black;
+    transform: translateY(5px);
+}
+.textareainput
+{
+    min-height: 170px;
+}
+/* profile section */
+.profile {
+    width: 100%;
+    height: 550px;
+    background-color: #fff;
+}
+
+.AboutMe {
+    text-align: center;
+    color: blueviolet;
+    font-family: "Russo One", sans-serif;
+    transform: translateY(30px);
+}
+
+.MainProfileBox {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    height: 400px;
+    width: 400px;
+    background: url("choise4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    /*60*/
+    border-radius: 30px;
+}
+
+.ProfileContent {
+    height: 400px;
+    width: 470px;
+    margin-top: 60px;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.hello {
+    margin-left: 30px;
+    transform: translateY(50px);
+}
+
+.ProfilePara {
+    margin-left: 30px;
+    transform: translateY(50px);
+}
+
+.CBox {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -10px;
+}
+
+.ProfileContentBox {
+    height: 120px;
+    width: 120px;
+    border: 3px solid black;
+    transform: translateY(70px);
+    border-radius: 10px;
+}
+
+.MainCount {
+    font-family: "Russo One", sans-serif;
+    text-align: center;
+    margin-left: -10px;
+    transform: translateY(30px);
+}
+
+.ProfileContentCount {
+    text-align: center;
+    transform: translateY(30px);
+    color: blueviolet;
+    font-weight: bold;
+}
+
+
+/* whatioffer */
+.whatioffer {
+    height: 430px;
+    width: 100%;
+}
+
+.offer {
+    text-align: center;
+    color: blueviolet;
+    font-family: "Russo One", sans-serif;
+    transform: translateY(30px);
+}
+
+.offerbox {
+    list-style: none;
+    display: flex;
+    transform: translateY(70px);
+    justify-content: center;
+    gap: 60px;
+}
+
+.WhatIOffrerBox {
+    height: 230px;
+    width: 220px;
+    border: none;
+    border-radius: 20px;
+    -webkit-box-shadow: -2px 6px 18px 2px rgba(110, 101, 110, 0.42);
+    -moz-box-shadow: -2px 6px 18px 2px rgba(110, 101, 110, 0.42);
+    box-shadow: -2px 6px 18px 2px rgba(110, 101, 110, 0.42);
+}
+
+.Head {
+    margin-left: 30px;
+    transform: translateY(70px);
+}
+
+.ExploreBtn {
+    margin-left: 30px;
+    transform: translateY(90px);
+    color: blueviolet;
+    border: none;
+    background-color: #fff;
+    font-family: "Russo One", sans-serif;
+}
+
+.Modal1List {
+    font-family: poppnic, sans-serif;
+    font-size: 18px;
+}
+
+/* checkMyResentProject */
+.checkMyResentProject {
+    height: 430px;
+    width: 100%;
+}
+
+.ResentProject {
+    color: blueviolet;
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+}
+
+.ResentProjectList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    transform: translateY(30px);
+}
+
+/* box1 */
+.RecentProjectBox1 {
+    height: 270px;
+    width: 410px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-box-shadow: -2px 6px 18px 2px rgba(110, 101, 110, 0.42);
+    -moz-box-shadow: -2px 6px 18px 2px rgba(110, 101, 110, 0.42);
+    box-shadow: -2px 6px 18px 2px rgba(110, 101, 110, 0.42);
+
+}
+
+/* box2 */
+.RecentProjectBox2 {
+    height: 270px;
+    width: 410px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-box-shadow: -2px 6px 18px 2px rgba(110, 101, 110, 0.42);
+    -moz-box-shadow: -2px 6px 18px 2px rgba(110, 101, 110, 0.42);
+    box-shadow: -2px 6px 18px 2px rgba(110, 101, 110, 0.42);
+}
+
+/* box3 */
+.RecentProjectBox3 {
+    height: 270px;
+    width: 410px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-box-shadow: -2px 6px 18px 2px rgba(110, 101, 110, 0.42);
+    -moz-box-shadow: -2px 6px 18px 2px rgba(110, 101, 110, 0.42);
+    box-shadow: -2px 6px 18px 2px rgba(110, 101, 110, 0.42);
+}
+
+.VideoButton {
+    padding: 9px;
+    transform: translateY(60px);
+    margin-left: 130px;
+    border: none;
+    background-color: blueviolet;
+    color: #fff;
+    font-family: "Russo One", sans-serif;
+}
+
+.projectname1 {
+    text-align: center;
+    color: blueviolet;
+    font-family: "Russo One", sans-serif;
+    transform: translateY(40px);
+}
+
+.project1desc {
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+    transform: translateY(50px);
+}
+
+/* language */
+.language {
+    height: 200px;
+    width: 100%;
+}
+
+.languagelogo {
+    list-style: none;
+    display: flex;
+    transform: translateY(20px);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* lets talk */
+.letstalk {
+    height: 520px;
+    width: 100%;
+}
+
+.Talk {
+    text-align: center;
+    color: blueviolet;
+    font-family: "Russo One", sans-serif;
+}
+
+.FormLabel {
+    text-align: center;
+    margin-left: -500px;
+}
+
+.FormLabel2 {
+    text-align: center;
+    margin-left: -520px;
+    transform: translateY(25px);
+}
+
+.field1 {
+    margin-left: 548px;
+    width: 35%;
+    height: 40px;
+    transform: translateY(10px);
+    outline: none;
+    border: 1px solid black;
+}
+
+.field2 {
+    margin-left: 548px;
+    width: 35%;
+    height: 40px;
+    transform: translateY(35px);
+    outline: none;
+    border: 1px solid black;
+    
+    min-height: 200px;
+}
+
+.btnsendmail {
+    padding: 9px;
+    transform: translateY(50px);
+    margin-left: 550px;
+    border: none;
+    background-color: blueviolet;
+    color: #fff;
+    font-family: "Russo One", sans-serif;
+}
+.footer
+{
+    height: 130px;
+    width: 100%;
+    background-color: blueviolet;
+    overflow: hidden;
+}
+.MainControl
+{
+    display: flex;
+    justify-content: space-around;
+}
+.FootLogo
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-family: "Russo One", sans-serif;
+    color:#fff;
+    font-size: 30px;
+    transform: translateY(20px);
+}
+.FootNav
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    color:#fff;
+    font-family: poppnic,sans-serif;
+    font-size: 20px;
+    transform: translateY(30px);
+    margin-left: -60px;
+}
+.FootSocial
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color:#fff;
+    transform: translateY(30px);
+}
+.FootPara
+{
+    text-align: center;
+    color: #fff;
+    transform: translateY(20px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Code For Page 1 (Home Page) */
+
+@media screen and (max-width: 800px) {
+
+    /* hme page */
+
+    * {
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        cursor: default;
+    }
+
+    .first {
+        height: 730px;
+        width: 100%;
+        background: url("Horizontal.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .nav {
+        height: 50px;
+        width: 100%;
+    }
+
+    .logo {
+        color: #fff;
+        margin-left: -80px;
+    }
+
+    .Item1 {
+        display: none;
+    }
+
+    .Item2 {
+        display: none;
+    }
+
+    .Item3 {
+        display: none;
+    }
+
+    .Item4 {
+        margin-left: 185px;
+        color: #fff;
+    }
+
+    .Item5 {
+        display: block;
+        color: #fff;
+        position: fixed;
+        margin-left: 280px;
+    }
+
+    /* box1 and box2 */
+    .box1 {
+        margin-left: -10px;
+        height: 410px;
+        width: 410px;
+        transform: translateY(30px);
+
+    }
+
+    .box2 {
+        margin-left: 25px;
+        height: 300px;
+        width: 300px;
+        transform: translateY(25px);
+
+    }
+
+    .social {
+        display: none;
+    }
+
+    .content {
+        height: 250px;
+        width: 100%;
+        margin-left: 0px;
+        transform: translateY(40px);
+    }
+
+    .name {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .para {
+        font-size: 18px;
+        text-align: center;
+        transform: translateY(3px);
+    }
+
+    .btn1 {
+        margin-left: 35px;
+        width: 40%;
+        transform: translateY(10px);
+    }
+
+    .btn2 {
+        width: 40%;
+        transform: translateY(10px);
+    }
+
+    .ResponsiveHideBox {
+        height: 760px;
+        width: 100%;
+        position: fixed;
+        transform: translateY(60px);
+        left: -100%;
+        background-color: black;
+        transition: 0.5s ease-in-out;
+        z-index: 20;
+    }
+
+    .MenuItem {
+        list-style: none;
+        font-family: "Russo One", sans-serif;
+        font-size: 25px;
+        color: #fff;
+        text-align: center;
+        margin-left: -30px;
+        transform: translateY(150px);
+        line-height: 100px;
+    }
+
+
+    /* profile page */
+    .profile {
+        height: 640px;
+        overflow: hidden;
+    }
+
+    .MainProfileBox {
+        flex-direction: column;
+    }
+
+    .img {
+        height: 300px;
+        width: 300px;
+        margin-left: 46px;
+        margin-top: 40px;
+
+    }
+
+    .ProfileContent {
+        height: 190px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .hello {
+        display: none;
+    }
+
+    .ProfilePara {
+        text-align: center;
+        margin-left: -5px;
+        font-family: "Righteous", sans-serif;
+        ;
+        transform: translateY(5px);
+    }
+
+    .CBox {
+        margin-top: -55px;
+        margin-left: -30px;
+    }
+
+    .ProfileContentBox {
+        height: 95px;
+        width: 95px;
+    }
+
+    .MainCount {
+        transform: translateY(18px);
+    }
+
+    .ProfileContentCount {
+        transform: translateY(18px);
+    }
+
+    .whatioffer {
+        overflow: hidden;
+        height: 920px;
+    }
+
+    .offerbox {
+        flex-direction: column;
+        margin-left: 56px;
+        transform: translateY(55px);
+        gap: 30px;
+    }
+
+    .checkMyResentProject {
+        height: 1000px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .ResentProjectList {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .RecentProjectBox1 {
+        width: 348px;
+        margin-left: -10px
+    }
+
+    .RecentProjectBox2 {
+        width: 348px;
+        margin-left: -10px
+    }
+
+    .RecentProjectBox3 {
+        width: 348px;
+        margin-left: -10px
+    }
+
+    .VideoButton {
+        margin-left: 107px;
+    }
+
+    .language {
+        height: 420px;
+        width: 100%;
+    }
+    .languagelogo {
+        list-style: none;
+        display: flex;
+        transform: translateY(30px);
+        flex-wrap: wrap;
+        gap: 70px;
+        margin-left: -35px;
+    }
+
+    .letstalk {
+        height: 500px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .FormLabel {
+        margin-left: -210px;
+    }
+
+    .FormLabel2 {
+        margin-left: -220px;
+    }
+
+    .field1 {
+        margin-left: 44px;
+        width: 77%;
+    }
+
+    .field2 {
+        margin-left: 44px;
+        width: 77%;
+        min-height: 200px;
+    }
+    .btnsendmail
+    {
+        margin-left: 45px;
+    }
+    .footer
+    {
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .MainControl
+    {
+        flex-direction: column;
+    }
+    .FootLogo
+    {
+        text-align: center;
+        margin-left: -55px;
+    }
+    .FootNav
+    {
+        font-size: 15px;
+    }
+    .FootSocial
+    {
+        height: 18px;
+        width: 18px;
+        margin-left: 137px;
+        transform:translateY(45px);
+    }
+    .FootPara
+    {
+        text-align: center;
+        font-size: 12px;
+        transform: translateY(56px);
+        margin-left: 19px;
+    }
+}
